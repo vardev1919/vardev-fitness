@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Result - Vardev Fitness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero small">
+    <img src="images/logo.png" alt="Vardev Fitness Logo" class="logo-img">
+  </header>
+
+  <main class="main-content">
+    <h2>Your BMI Result</h2>
+    <p id="bmi-output">BMI data not available.</p>
+
+    <section class="bmi-cards-container">
+      <!-- Underweight Card -->
+      <div class="bmi-card hover-card underweight">
+        <h3>Underweight 🥗</h3>
+        <p>You may need to gain healthy weight. Focus on nutrient-rich foods.</p>
+        <ul>
+          <li>🔹 High-calorie meals</li>
+          <li>🔹 Protein smoothies</li>
+          <li>🔹 Strength training</li>
+        </ul>
+        <table>
+          <tr><th>Meal</th><th>Food</th></tr>
+          <tr><td>Breakfast</td><td>Oats + Nuts + Milk</td></tr>
+          <tr><td>Lunch</td><td>Rice + Paneer + Veggies</td></tr>
+        </table>
+      </div>
+
+      <!-- Normal Weight Card -->
+      <div class="bmi-card hover-card normal">
+        <h3>Normal Weight ✅</h3>
+        <p>Great! Maintain your fitness with a balanced diet and regular workouts.</p>
+        <ul>
+          <li>🔹 Whole grains</li>
+          <li>🔹 Cardio + Yoga</li>
+          <li>🔹 8 hrs of sleep</li>
+        </ul>
+        <table>
+          <tr><th>Meal</th><th>Food</th></tr>
+          <tr><td>Breakfast</td><td>Boiled eggs + Toast</td></tr>
+          <tr><td>Lunch</td><td>Brown rice + Chicken + Salad</td></tr>
+        </table>
+      </div>
+
+      <!-- Overweight/Obese Card -->
+      <div class="bmi-card hover-card overweight">
+        <h3>Overweight/Obese ⚠️</h3>
+        <p>Consider a calorie-controlled diet and increase your activity level.</p>
+        <ul>
+          <li>🔹 Low-carb meals</li>
+          <li>🔹 HIIT or walking</li>
+          <li>🔹 Hydration & rest</li>
+        </ul>
+        <table>
+          <tr><th>Meal</th><th>Food</th></tr>
+          <tr><td>Breakfast</td><td>Green smoothie + eggs</td></tr>
+          <tr><td>Lunch</td><td>Grilled fish + Salad</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Personalized Plan Form -->
+    <section class="subscribe-form">
+      <h3>🎯 Get Your Personalized Fitness Plan</h3>
+      <form id="personal-plan-form">
+        <input type="text" placeholder="Full Name" name="name" required />
+        <input type="number" placeholder="Age" name="age" required />
+        <input type="tel" placeholder="Phone Number" name="phone" required />
+        <input type="email" placeholder="Email Address" name="email" required />
+        <textarea name="goals" placeholder="Fitness Goals (e.g., Weight Loss, Muscle Gain)" rows="3" required></textarea>
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <strong>SAI TEJA</strong> & <strong>VARUN</strong> | Vardev Fitness</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

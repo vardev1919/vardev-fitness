@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+  }
+  
+  /* Hero section */
+  .hero {
+    background: url('images/gym-boy.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero.small {
+    height: 40vh;
+  }
+  
+  .logo-img {
+    max-width: 350px;
+    width: 90%;
+    height: auto;
+    filter: drop-shadow(2px 2px 10px black);
+  }
+  
+  .main-content {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #011a08;
+  }
+  
+  .bmi-card,
+  .info-card {
+    background-color: #1a1f2e;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .bmi-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .hover-card {
+    transition: transform 0.3s ease;
+  }
+  .hover-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .bmi-card table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+  }
+  .bmi-card table, .bmi-card th, .bmi-card td {
+    border: 1px solid #fff;
+    padding: 8px;
+  }
+  .bmi-card th {
+    background-color: #333;
+  }
+  
+  /* Form */
+  .subscribe-form {
+    margin-top: 40px;
+    background-color: #1a1f2e;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .subscribe-form input,
+  .subscribe-form textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .subscribe-form button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #009dd6;
+  }
+  
+  footer {
+    background-color: #0c0c0c;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .logo-img {
+      max-width: 250px;
+    }
+  
+    .bmi-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
